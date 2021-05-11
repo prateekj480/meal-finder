@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #045762;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 300px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-bar input + button {
+  position: relative;
+  right: 4px;
+}
+
+.search-bar button {
+  padding: 7.5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+#random {
+  border-radius: 5px;
+}
+
+.search-bar button:focus {
+  outline: none;
+}
+
+.meals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  width: 180px;
+  height: 180px;
+  margin: 20px 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  border: 2px white solid;
+  border-radius: 4px;
+}
+
+.img-container h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s ease;
+  opacity: 0;
+}
+
+.img-container:hover .meal-info {
+  opacity: 1;
+}
+
+.single-meal {
+  width: 50%;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .single-meal {
+    width: 100%;
+  }
+}
+
+.meal-category {
+  border: 2px dotted #03383f;
+}
+
+.meal-instructions {
+  margin-top: 30px;
+  border: 2px dotted #bbbbbb;
+}
+
+.meal-instructions p {
+  line-height: 2rem;
+  padding: 0 8px;
+}
+
+.ingredient-div-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ingredient-div {
+  background-color: #03383f;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 0 5px;
+}
+
+.ingredient-div p {
+  font-size: 13px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Meal finder</title>
+    <script
+      src="https://kit.fontawesome.com/a95e2c876b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 class="title">Meal Locator</h1>
+    <div class="search-bar">
+      <input
+        type="text"
+        placeholder="Enter meal here"
+        class="search-meal"
+        id="search-meal"
+      />
+      <button id="search"><i class="fas fa-search"></i></button>
+      <button id="random"><i class="fas fa-random"></i></button>
+    </div>
+    <div class="search-result" id="search-result"></div>
+    <div class="meals" id="meals"></div>
+    <div class="single-meal" id="single-meal"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
